@@ -28,7 +28,7 @@ public class Solution {
         }
         private int len(ListNode head){
           int count=0;
-          while(head.next!=null){
+          while(head!=null){
             head=head.next;
             count++;
 
