@@ -1,6 +1,6 @@
 class Solution {
     public String removeDuplicates(String ss) {
-        Stack<Character>st=new Stack<>();
+        Deque<Character>st=new ArrayDeque<>();
         StringBuilder ans=new StringBuilder();
         for(char s:ss.toCharArray()){
          
