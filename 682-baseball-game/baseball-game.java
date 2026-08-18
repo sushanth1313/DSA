@@ -1,6 +1,6 @@
 class Solution {
     public int calPoints(String[] operations) {
-        Stack<Integer>st=new Stack<>();
+       Deque<Integer> st = new ArrayDeque<>();
         int sum=0;
         for(String op:operations){
          
