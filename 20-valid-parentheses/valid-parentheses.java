@@ -1,6 +1,6 @@
 class Solution {
     public boolean isValid(String s) {
-        Stack<Character>ss=new Stack<>();
+        Deque<Character>ss=new ArrayDeque<>();
       for (char st:s.toCharArray()){
         if(st=='['){
             ss.push(']');
