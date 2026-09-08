@@ -23,7 +23,7 @@ class Solution {
        Map<Node,Node>mp=new HashMap<>();
        Deque<Node>q=new ArrayDeque<>();
        if (node == null)
-            return null;
+        return null;
        mp.put(node,new Node(node.val,new ArrayList<>()));
        q.add(node);
        while(!q.isEmpty()){
