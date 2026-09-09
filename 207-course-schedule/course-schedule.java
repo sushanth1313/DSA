@@ -25,7 +25,7 @@ class Solution {
             for(int any:graph.get(curr)){
                 indegree[any]--;
                 if(indegree[any]==0){
-                    q.offer(any);
+                q.offer(any);
                 }
             }
         }
