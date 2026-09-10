@@ -13,7 +13,7 @@ class Solution {
             indegree[course]++;
         }
        
-        Deque<Integer>q=new ArrayDeque<>();
+        ArrayDeque<Integer>q=new ArrayDeque<>();
         
        for(int i=0;i<numCourses;i++){
        if(indegree[i]==0){
