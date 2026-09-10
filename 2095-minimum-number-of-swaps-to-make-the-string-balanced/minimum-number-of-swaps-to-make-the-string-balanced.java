@@ -1,16 +1,17 @@
 class Solution {
     public int minSwaps(String s) {
-        Deque<Character>st=new ArrayDeque<>();
+      int op=0;
        for(char c:s.toCharArray()){
         if(c=='['){
-            st.push(c);
+           op++;
         }else{
-            if(!st.isEmpty()){
-            st.pop();
+           if(op>0){
+            op--;
+           }
             }
         }
-       }
-       return ((st.size()+1)/2);
+         return ((op+1)/2);
 
+       }
+      
     }
-}
